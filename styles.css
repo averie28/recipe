@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
 
 :root {
     --cream: #f7efda;
@@ -21,8 +22,11 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 2.4rem;
+    font-size: 4rem;
     margin-bottom: 0.5rem;
+    font-family: 'Cherry Bomb One', cursive;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 var(--cream), 4px 4px 0 var(--pink);
 }
 
 h2 {
