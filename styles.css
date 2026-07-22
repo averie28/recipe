@@ -1,22 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
 
+:root {
+    --cream: #f7efda;
+    --rose: #e3bbbd;
+    --pink: #df949d;
+    --olive: #97976a;
+    --brown: #6f5e4f;
+}
+
 body {
     font-family: 'Fredoka', sans-serif;
     padding: 20px;
+    background: linear-gradient(135deg, var(--cream) 0%, var(--rose) 100%);
+    color: var(--brown);
 }
 
-h1 {
-    color: #8b5a8f;
+h1, h2 {
+    color: var(--brown);
     text-align: center;
 }
 
-h2 {
-    color: #8b5a8f;
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
 }
 
-.ingredients {
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.ingredients,
+.gallery,
+.instructions {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(111, 94, 79, 0.16);
 }
 
 .grid {
@@ -27,16 +49,11 @@ h2 {
 }
 
 .ingredient {
-    background-color: #f5f1e8;
-    border-left: 4px solid #8b5a8f;
+    background-color: var(--cream);
+    border-left: 4px solid var(--pink);
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 10px;
     font-size: 16px;
-}
-
-.gallery {
-    max-width: 1000px;
-    margin: 40px auto;
 }
 
 .image-grid {
@@ -50,12 +67,8 @@ h2 {
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
+    border: 3px solid var(--pink);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.instructions {
-    max-width: 1000px;
-    margin: 40px auto;
 }
 
 .instruction-list {
@@ -64,17 +77,18 @@ h2 {
 }
 
 .instruction-list li {
-    background-color: #f5f1e8;
+    background-color: var(--cream);
     margin-bottom: 15px;
     padding: 15px;
-    border-left: 4px solid #8b5a8f;
-    border-radius: 4px;
+    border-left: 4px solid var(--pink);
+    border-radius: 10px;
     font-size: 16px;
     line-height: 1.6;
 }
 
 @media (max-width: 768px) {
-    .grid {
+    .grid,
+    .image-grid {
         grid-template-columns: 1fr;
     }
 }
