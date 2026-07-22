@@ -34,6 +34,26 @@ h2 {
     font-size: 16px;
 }
 
+.instructions {
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.instruction-list {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.instruction-list li {
+    background-color: #f5f1e8;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 4px solid #8b5a8f;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;
